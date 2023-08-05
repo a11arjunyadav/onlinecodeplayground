@@ -3,9 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Online Coding Playground</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="./css/style.css" rel="stylesheet" />
     </head>
     <body>
-        
+        <div class="container-fluid p-5 pt-1">
+            <h1 class="text-center pb-2">Online Code Playground</h1>
+            <div class="d-flex flex-row mb-2">
+                <select class="form-select a-w10 me-2" aria-label="Default select example">
+                    <option selected>Select Langauage</option>
+                    <option value="1">Python</option>
+                    <option value="2">Java</option>
+                    <option value="3">PHP</option>
+                    <option value="3">C</option>
+                    <option value="3">C++</option>
+                    <option value="3">C#</option>
+                    <option value="3">R</option>
+                </select>
+                <select class="form-select a-w10 me-2" aria-label="Default select example">
+                    <option selected>Secect Version</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                    <button class="btn btn-success a-w5 me-2">Run<i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="row m-0">
+                <div class="col-6 ps-0 pe-1 a-tbdr a-h600">
+                    <div class="bg-white shadow-sm h-100 p-2" contenteditable="true" id="editablecontent">1</div>
+                </div>
+                <div class="col-6 ps-1 pe-0 a-tbdr a-h600">
+                    <div class="bg-black text-white shadow-sm  h-100 p-2 a-consolab">
+                        Hello World
+                        <div class="align-items-center d-flex justify-content-center h-100">
+                            <div class="spinner-border text-success loader position-absolute" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
     </body>
 </html>

@@ -1,0 +1,28 @@
+.a-consolab{
+    font-family: "consolaz" ;
+}
+body{
+    background-color: #E7E9EB ;
+}
+.a-tbdr{
+    border: 1px Dashed #000 ;
+}
+.a-w10{
+    width: 200px ;
+}
+.a-w5{
+    width: 100px ;
+}
+.a-h600{
+    height: 620px ;
+}
+#editablecontent[contenteditable="true"] {
+    outline: none;
+    /* Add any other desired styles for the contenteditable element */
+  }
+.loader{
+    width: 6rem ;
+    height: 6rem ;
+    border-width: 0.4em ;
+}
+  
